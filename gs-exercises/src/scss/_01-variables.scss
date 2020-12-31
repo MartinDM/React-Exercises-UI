@@ -1,0 +1,19 @@
+/* Brand */
+$gs_blue: #007db5;
+$gs_grey: #53565a;
+$dark-grey: #333333;
+$light-grey: #f8f8f8;
+
+/* Named variables */
+$content: $dark-grey;
+$brand: $gs_blue;
+$secondary: $gs_grey;
+$bg: $light-grey; 
+
+$space: 1em;
+
+/* Breakpoints */
+/* These corespond to those used in Material UI library for our grdi */
+$breakpoint-sm: 600px;
+$breakpoint-md: 960px;
+$breakpoint-lg: 12800px;

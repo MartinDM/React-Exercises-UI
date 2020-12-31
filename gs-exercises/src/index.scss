@@ -1,0 +1,57 @@
+/* Variables */
+@import 'scss/01-variables';
+
+html {
+  font-size: 16px;
+  font-size: 62.5%;
+  line-height: 1.5;
+  background: $gs_grey;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Montserrat",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  touch-action: auto
+}
+
+body,input,textarea,button,select {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%
+}
+
+a:focus {
+  color: inherit
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  line-height: 1.1;
+  margin-bottom: 1.4rem;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* Utility classes */
+.u {
+  &-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}

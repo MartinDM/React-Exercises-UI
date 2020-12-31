@@ -1,0 +1,79 @@
+@import '../../scss/01-variables';
+
+.exercise {
+  padding-bottom: $space;
+  margin-bottom: $space;
+  border-bottom: 5px solid lighten($gs-grey, 20%);
+  ol, ul {
+    padding: 0;
+    list-style-position: inside;
+  }
+  &__areas {
+    font-size: 0.8em;
+    margin: 0 0 $space;
+    p {
+      font-weight: 800;
+      font-size: 1em;
+      margin: 0 0 6px;
+      color: $gs-grey;
+      text-transform: uppercase;
+    }
+    h4 {
+      margin-bottom: $space/2;
+    }
+    li {
+      display: inline-block;
+      padding-right: $space/2;
+    }
+    .MuiChip-root {
+      text-transform: uppercase;
+      background: rgb(0,125,181);
+      background: linear-gradient(51deg, rgba(0,125,181,1) 63%, rgba(1,148,214,1) 100%);
+      height: auto;
+      color: white;
+      font-size: 10px;
+      padding: 5px;
+      border-radius: 0;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    @media (min-width: $breakpoint-sm) {
+      height: 200px;
+      background-size: cover;
+      background-position: center 10%;
+    }
+  }
+  &__gender-toggle {
+    font-size: 1em;
+    p {
+      margin: 0;
+    }
+  }
+  &__details {
+    ol, ul {
+      background: $light-grey;
+      padding: 1em;
+      border-radius: 3px;
+      font-size: 14px;
+      li {
+        margin-bottom: $space;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    p {
+      font-size: 0.8em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title {
+  }
+}
