@@ -1,6 +1,6 @@
-# GymShark Exercise App
+# GS Exercise App
 
-__This is a demo app which follows a brief to display exercises from an endpoint and create a user experience around them.__
+__This is a demo app which uses an endpoint of exercises to create a user experience around them.__
 
 
 **[App demo on Surge.sh 🚀 ](https://gymshark-fitness-app.surge.sh)**
@@ -9,7 +9,7 @@ __This is a demo app which follows a brief to display exercises from an endpoint
 
 The project uses SASS files for each component, with a global stylesheet for general layout and Material UI library overrides.
 
-- Borrows from GymShark brand identity/colours
+- Borrows from GS brand identity/colours
 - Exercise details show in a modal
 - Gender of the model photos can be toggled
 
