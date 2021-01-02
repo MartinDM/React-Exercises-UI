@@ -1,19 +1,27 @@
 # GymShark Exercise App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+__This is a demo app which follows a brief to display exercises from an endpoint and create a user experience around them.__
 
-This is a demo app which follows a brief to display exercises from an endpoint and create a user experience around them.
+
+**[App demo on Surge.sh 🚀 ](https://gymshark-fitness-app.surge.sh)**
+
+![App Preview](https://github.com/MartinDM/exercises/blob/main/preview-1.png?raw=true "App preview")🚀
 
 The project uses SASS files for each component, with a global stylesheet for general layout and Material UI library overrides.
 
 - Borrows from GymShark brand identity/colours
 - Exercise details show in a modal
 - Gender of the model photos can be toggled
+
 ## NFRs
 - The SASS convention is BEM for maintainability
 - The app shows a 'loading' state while fetching the data
 - If no exercises are returned, a helpful onward journey into the GymShark site is shown
 - Fully-responsive
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
