@@ -23,6 +23,11 @@ In the project directory, you can run:
 
 This will build the app and publish it on Surge for demo purposes at the url named in the CNAME file. Hit enter on the command line to confirm source directory.
 
+### `npm run storybook`
+
+This will open he React UI development environment to view each component in isolation and modify its state and content.
+Access the storybook at [http://localhost:6006/](http://localhost:6006/); 
+
 The app is then available at `http://gymshark-fitness-app.surge.sh/`!
 ### `yarn start`
 

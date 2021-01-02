@@ -24,32 +24,29 @@ export default function App() {
 
   const fetchExercises = async () => {
     const isDevelopment = process.env.NODE_ENV === 'development';
-    // Use a proxy for CORS when running locally
-    //const url = CORS_PROXY + GS_ENDPOINT;
+    // In case of neeting to use a proxy for CORS when running locally
+    // Axios using URL directly
+    // const url = CORS_PROXY + GS_ENDPOINT;
     const url = !isDevelopment ? CORS_PROXY + GS_ENDPOINT : GS_ENDPOINT;
     await axios({
       url: GS_ENDPOINT,
       timeout: 1000
-     })
-      .then( res => {
+    })
+      .then(res => {
         const exerciseData = res.data;
         const exercises = exerciseData.exercises;
         setExercises(exercises);
         setLoaded(true);
-        console.log('1')
       })
       .catch(function (err) {
-        console.log('2')
         setLoaded(true);
         setSuccess(false);
       })
   };
 
   /* Components */
-/* 
-  const exerciseListComponent = <ExerciseList loading={!isLoaded} exercises={exercises} />
-  const loadingComponent = <Loading  /> */
-
+  const exerciseListComponent = <ExerciseList exercises={exercises} />;
+  const loadingComponent = <Loading />
   return (
     <>
       <Container fixed maxWidth="md">
@@ -58,7 +55,7 @@ export default function App() {
           direction="row"
           justify="space-between"
         >
-          { !isLoaded ? <Loading  /> : <ExerciseList exercises={exercises} />}
+          {!isLoaded ? loadingComponent : exerciseListComponent}
         </Grid>
       </Container>
     </>

@@ -26,22 +26,23 @@ const useStyles = makeStyles(() => ({
 
 const StyledGenderSwitch = withStyles({
   switchBase: {
-    color: '#333;',
+    color: '#333',
     "&$checked": {
       color: '#333;',
     },
     "&$checked + $track": {
-      backgroundColor: '#333;'
+      backgroundColor: '#333',
+      color: '#333',
     }
   },
   checked: {},
   track: {
-    backgroundColor: '#333;',
+    backgroundColor: '#333',
     opacity: 0.5
   },
   thumb: {
     border: '2px solid white',
-    background: '2px solid white',
+    background: '2px solid white'
   }
 })(Switch);
 
@@ -113,7 +114,7 @@ export default function Exercise({ exercise }) {
           <Grid component="label" container alignItems="center" spacing={1}>
             <Grid item>Female</Grid>
             <Grid item>
-              <StyledGenderSwitch checked={(gender === 'male')} onChange={onGenderToggle} name="gender" />
+              <StyledGenderSwitch color="default" checked={(gender === 'male')} onChange={onGenderToggle} name="gender" />
             </Grid>
             <Grid item>Male</Grid>
           </Grid>
@@ -139,12 +140,12 @@ export default function Exercise({ exercise }) {
             className="modal">
             <Grid
               item
-              className="modal__content"> 
-                <Close className="modal-close" style={{ color: '#53565a' }} onClick={handleClose} />
-                <div className="exercise__content" id="exercise-steps">
-                  <h2 className="h2 exercise__title exercise__title--modal" id="exercise-title">{exercise.name}</h2>
-                  {ReactHtmlParser(exercise.transcript)}
-                </div>
+              className="modal__content">
+              <Close className="modal-close" style={{ color: '#53565a' }} onClick={handleClose} />
+              <div className="exercise__content" id="exercise-steps">
+                <h2 className="h2 exercise__title exercise__title--modal" id="exercise-title">{exercise.name}</h2>
+                {ReactHtmlParser(exercise.transcript)}
+              </div>
             </Grid>
           </Grid>
         </Fade>
