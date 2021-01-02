@@ -1,11 +1,29 @@
-# Getting Started with Create React App
+# GymShark Exercise App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This is a demo app which follows a brief to display exercises from an endpoint and create a user experience around them.
+
+The project uses SASS files for each component, with a global stylesheet for general layout and Material UI library overrides.
+
+- Borrows from GymShark brand identity/colours
+- Exercise details show in a modal
+- Gender of the model photos can be toggled
+## NFRs
+- The SASS convention is BEM for maintainability
+- The app shows a 'loading' state while fetching the data
+- If no exercises are returned, a helpful onward journey into the GymShark site is shown
+- Fully-responsive
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `npm run publish`
+
+This will build the app and publish it on Surge for demo purposes at the url named in the CNAME file. Hit enter on the command line to confirm source directory.
+
+The app is then available at `http://gymshark-fitness-app.surge.sh/`!
 ### `yarn start`
 
 Runs the app in the development mode.\

@@ -2,61 +2,65 @@ import React, { useState, useEffect } from 'react';
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 import ExerciseList from './components/ExerciseList';
+import Loading from './components/Loading';
 import axios from 'axios';
 
-function App() {
+export default function App() {
 
   /*  Hooks */
-  const [ isLoaded, setLoaded ] = useState(false)
-  const [ exercises, setExercises ] = useState([]);
-  const [ apiFailed, setApiFailed ] = useState(false);
-  
-  const CORS_PROXY='https://cors-anywhere.herokuapp.com/';
-  const GS_ENDPOINT =  'https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/';
-  
-  useEffect( () => {
-    fetchExercises();
+  const [isLoaded, setLoaded] = useState();
+  const [success, setSuccess] = useState(true);
+  const [exercises, setExercises] = useState([]);
+
+  /* Would be stored in .env file */
+  const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+  const GS_ENDPOINT = 'https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/';
+
+  useEffect(() => {
+    return () => {
+      fetchExercises();
+    };
   }, []);
 
-  const fetchExercises = async () => { 
+  const fetchExercises = async () => {
     const isDevelopment = process.env.NODE_ENV === 'development';
     // Use a proxy for CORS when running locally
     //const url = CORS_PROXY + GS_ENDPOINT;
-    const url = GS_ENDPOINT;
-
-     await axios({
-       url: url,
-       timeout: 5000
-      })
-     .then( res => {
-      const exerciseData = res.data;
-      const exercises = exerciseData;
-       
-        //console.log(exercises)
-        setLoaded(true);
-        setExercises( exercises.exercises);
-        console.log()
+    const url = !isDevelopment ? CORS_PROXY + GS_ENDPOINT : GS_ENDPOINT;
+    await axios({
+      url: GS_ENDPOINT,
+      timeout: 1000
      })
-     .catch(function (err) {
-        console.log(err)
-        setApiFailed(true);
-        return;
+      .then( res => {
+        const exerciseData = res.data;
+        const exercises = exerciseData.exercises;
+        setExercises(exercises);
+        setLoaded(true);
+        console.log('1')
+      })
+      .catch(function (err) {
+        console.log('2')
+        setLoaded(true);
+        setSuccess(false);
       })
   };
 
-  const exerciseList = <ExerciseList loading={!isLoaded} exercises={exercises}  />
-  const loading = `<p>Loading...</p>`
-  return (
-    <Container>
-      <Grid
-        container
-        direction="row"
-        justify="space-between"
-      > 
-      { !isLoaded ? loading : exerciseList }
-      </Grid>
-    </Container>
-  );
-}
+  /* Components */
+/* 
+  const exerciseListComponent = <ExerciseList loading={!isLoaded} exercises={exercises} />
+  const loadingComponent = <Loading  /> */
 
-export default App;
+  return (
+    <>
+      <Container fixed maxWidth="md">
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+        >
+          { !isLoaded ? <Loading  /> : <ExerciseList exercises={exercises} />}
+        </Grid>
+      </Container>
+    </>
+  );
+};
