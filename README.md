@@ -1,42 +1,44 @@
-# GS Exercise App
+# Exercise App
 
 __This is a demo app which uses an endpoint of exercises to create a user experience around them.__
 
-
 **[App demo on Surge.sh 🚀 ](https://gymshark-fitness-app.surge.sh)**
 
-![App Preview](https://github.com/MartinDM/exercises/blob/main/preview-1.png?raw=true "App preview")🚀
+![App Preview](https://github.com/MartinDM/exercises/blob/main/preview-1.png?raw=true "App preview")
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The project uses SASS files for each component, with a global stylesheet for general layout and Material UI library overrides.
 
 - Borrows from GS brand identity/colours
 - Exercise details show in a modal
-- Gender of the model photos can be toggled
+- Gender of the model photos for each exercise can be toggled
 
 ## NFRs
 - The SASS convention is BEM for maintainability
 - The app shows a 'loading' state while fetching the data
-- If no exercises are returned, a helpful onward journey into the GymShark site is shown
+- If no exercises are returned, a helpful onward journey into the 'Central' section of the site is shown
 - Fully-responsive
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+- Components used can be developed in isolaton in the Storybook UI (See below)
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+### `npm run start`
+
+To sart development locally
+
 ### `npm run publish`
 
 This will build the app and publish it on Surge for demo purposes at the url named in the CNAME file. Hit enter on the command line to confirm source directory.
+The app is then available at `http://gymshark-fitness-app.surge.sh/`
 
 ### `npm run storybook`
 
 This will open he React UI development environment to view each component in isolation and modify its state and content.
 Access the storybook at [http://localhost:6006/](http://localhost:6006/); 
 
-The app is then available at `http://gymshark-fitness-app.surge.sh/`!
 ### `yarn start`
 
 Runs the app in the development mode.\
