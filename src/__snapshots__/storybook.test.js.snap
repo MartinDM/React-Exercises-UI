@@ -1,0 +1,609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Exercise Default 1`] = `
+<div
+  className="MuiGrid-root exercise MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-space-between"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-8"
+  >
+    <h1
+      className="h2 exercise__title"
+    >
+      Barbell Bicep Curl
+    </h1>
+    <div
+      className="exercise__areas"
+    >
+      <h3
+        className="h5 exercise__areas-title"
+      >
+        Muscle groups:
+      </h3>
+      <ul
+        className="exercise__areas-list"
+      >
+        <li>
+          <div
+            className="MuiChip-root"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <span
+              className="MuiChip-label"
+            >
+              Arms
+            </span>
+          </div>
+        </li>
+        <li>
+          <div
+            className="MuiChip-root"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <span
+              className="MuiChip-label"
+            >
+              Biceps
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      className="exercise__details"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-contained exercise__details-toggle"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          See details
+          <span
+            className="MuiButton-endIcon MuiButton-iconSizeMedium"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04zM10 12H8l4-4 4 4h-2v4h-4v-4z"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+  >
+    <div
+      className="exercise__image"
+      style={
+        Object {
+          "backgroundImage": "linear-gradient(0deg, rgba(0,125,181,1) 0%,
+                            rgba(1,148,214,0) 71%),
+                            url(https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalebbcurlsthumbnail.jpg)",
+        }
+      }
+    >
+      <img
+        alt="Barbell Bicep Curl"
+        className="u-visually-hidden"
+        src="https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalebbcurlsthumbnail.jpg"
+      />
+    </div>
+    <div
+      className="MuiFormGroup-root exercise__gender-toggle"
+    >
+      <h3
+        className="h5 exercise__gender-toggle-title"
+      >
+        Demo by:
+      </h3>
+      <label
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item"
+        >
+          Female
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item"
+        >
+          <span
+            className="MuiSwitch-root"
+          >
+            <span
+              aria-disabled={false}
+              className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-6 MuiSwitch-switchBase WithStyles(ForwardRef(Switch))-switchBase-2"
+              onBlur={[Function]}
+              onDragLeave={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchMove={[Function]}
+              onTouchStart={[Function]}
+              tabIndex={null}
+            >
+              <span
+                className="MuiIconButton-label"
+              >
+                <input
+                  checked={false}
+                  className="PrivateSwitchBase-input-9 MuiSwitch-input"
+                  name="gender"
+                  onChange={[Function]}
+                  type="checkbox"
+                />
+                <span
+                  className="MuiSwitch-thumb WithStyles(ForwardRef(Switch))-thumb-5"
+                />
+              </span>
+            </span>
+            <span
+              className="MuiSwitch-track WithStyles(ForwardRef(Switch))-track-4"
+            />
+          </span>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item"
+        >
+          Male
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Exercise List Empty List 1`] = `
+<div
+  className="exercise-list--empty"
+>
+  <div
+    className="message-area"
+  >
+    <h1
+      className="h2 message-area__title"
+    >
+      Oops
+    </h1>
+    <p>
+      <strong>
+        No exercises to show right now! 😧
+      </strong>
+    </p>
+    <p>
+      Fear not! Get workout tips from the team at 
+      <a
+        href="https://central.gymshark.com/category/conditioning"
+      >
+        Gymshark Central
+      </a>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Exercise List Populated List 1`] = `
+<div
+  className="exercise-list"
+>
+  <div
+    className="MuiGrid-root exercise MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-space-between"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-8"
+    >
+      <h1
+        className="h2 exercise__title"
+      >
+        Tricep Pushdown
+      </h1>
+      <div
+        className="exercise__areas"
+      >
+        <h3
+          className="h5 exercise__areas-title"
+        >
+          Muscle groups:
+        </h3>
+        <ul
+          className="exercise__areas-list"
+        >
+          <li>
+            <div
+              className="MuiChip-root"
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+            >
+              <span
+                className="MuiChip-label"
+              >
+                Arms
+              </span>
+            </div>
+          </li>
+          <li>
+            <div
+              className="MuiChip-root"
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+            >
+              <span
+                className="MuiChip-label"
+              >
+                Triceps
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="exercise__details"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained exercise__details-toggle"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            See details
+            <span
+              className="MuiButton-endIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04zM10 12H8l4-4 4 4h-2v4h-4v-4z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+    >
+      <div
+        className="exercise__image"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(0deg, rgba(0,125,181,1) 0%,
+                            rgba(1,148,214,0) 71%),
+                            url(https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalestraightbarpushdownthumbnail.jpg)",
+          }
+        }
+      >
+        <img
+          alt="Tricep Pushdown"
+          className="u-visually-hidden"
+          src="https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalestraightbarpushdownthumbnail.jpg"
+        />
+      </div>
+      <div
+        className="MuiFormGroup-root exercise__gender-toggle"
+      >
+        <h3
+          className="h5 exercise__gender-toggle-title"
+        >
+          Demo by:
+        </h3>
+        <label
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            Female
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            <span
+              className="MuiSwitch-root"
+            >
+              <span
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiSwitch-switchBase WithStyles(ForwardRef(Switch))-switchBase-11"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <input
+                    checked={false}
+                    className="PrivateSwitchBase-input-18 MuiSwitch-input"
+                    name="gender"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  <span
+                    className="MuiSwitch-thumb WithStyles(ForwardRef(Switch))-thumb-14"
+                  />
+                </span>
+              </span>
+              <span
+                className="MuiSwitch-track WithStyles(ForwardRef(Switch))-track-13"
+              />
+            </span>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            Male
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiGrid-root exercise MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-xs-space-between"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-8"
+    >
+      <h1
+        className="h2 exercise__title"
+      >
+        Barbell Bicep Curl
+      </h1>
+      <div
+        className="exercise__areas"
+      >
+        <h3
+          className="h5 exercise__areas-title"
+        >
+          Muscle groups:
+        </h3>
+        <ul
+          className="exercise__areas-list"
+        >
+          <li>
+            <div
+              className="MuiChip-root"
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+            >
+              <span
+                className="MuiChip-label"
+              >
+                Arms
+              </span>
+            </div>
+          </li>
+          <li>
+            <div
+              className="MuiChip-root"
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+            >
+              <span
+                className="MuiChip-label"
+              >
+                Biceps
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="exercise__details"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained exercise__details-toggle"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            See details
+            <span
+              className="MuiButton-endIcon MuiButton-iconSizeMedium"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M21 3H3c-1.11 0-2 .89-2 2v14c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 16.02H3V4.98h18v14.04zM10 12H8l4-4 4 4h-2v4h-4v-4z"
+                />
+              </svg>
+            </span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4"
+    >
+      <div
+        className="exercise__image"
+        style={
+          Object {
+            "backgroundImage": "linear-gradient(0deg, rgba(0,125,181,1) 0%,
+                            rgba(1,148,214,0) 71%),
+                            url(https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalebbcurlsthumbnail.jpg)",
+          }
+        }
+      >
+        <img
+          alt="Barbell Bicep Curl"
+          className="u-visually-hidden"
+          src="https://cdni.gs.lightning-e.com/media/5c0e6814ee0147fd16ef61d2-femalebbcurlsthumbnail.jpg"
+        />
+      </div>
+      <div
+        className="MuiFormGroup-root exercise__gender-toggle"
+      >
+        <h3
+          className="h5 exercise__gender-toggle-title"
+        >
+          Demo by:
+        </h3>
+        <label
+          className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 MuiGrid-align-items-xs-center"
+        >
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            Female
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            <span
+              className="MuiSwitch-root"
+            >
+              <span
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-15 MuiSwitch-switchBase WithStyles(ForwardRef(Switch))-switchBase-11"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <input
+                    checked={false}
+                    className="PrivateSwitchBase-input-18 MuiSwitch-input"
+                    name="gender"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  <span
+                    className="MuiSwitch-thumb WithStyles(ForwardRef(Switch))-thumb-14"
+                  />
+                </span>
+              </span>
+              <span
+                className="MuiSwitch-track WithStyles(ForwardRef(Switch))-track-13"
+              />
+            </span>
+          </div>
+          <div
+            className="MuiGrid-root MuiGrid-item"
+          >
+            Male
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Loading API Failed 1`] = `
+<div>
+  <p>
+    Oops! There was an error behind the scenes 😧
+  </p>
+  <p>
+    Fear not! Get workout tips from the team at 
+    <a
+      href="https://central.gymshark.com/category/conditioning"
+    >
+      Gymshark Central
+    </a>
+  </p>
+</div>
+`;
+
+exports[`Storyshots Loading Default 1`] = `
+<div>
+  <p>
+    Oops! There was an error behind the scenes 😧
+  </p>
+  <p>
+    Fear not! Get workout tips from the team at 
+    <a
+      href="https://central.gymshark.com/category/conditioning"
+    >
+      Gymshark Central
+    </a>
+  </p>
+</div>
+`;
