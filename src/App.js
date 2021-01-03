@@ -12,22 +12,21 @@ export default function App() {
   const [success, setSuccess] = useState(true);
   const [exercises, setExercises] = useState([]);
 
-  /* Would be stored in .env file */
-  const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
+  /* Could be stored in .env file if keys */
   const GS_ENDPOINT = 'https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/';
 
   useEffect(() => {
-    return () => {
       fetchExercises();
-    };
   }, []);
 
+  // Short delay for demo and user feedback
+  const delayLoad = () => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 1000);
+  }
+
   const fetchExercises = async () => {
-    const isDevelopment = process.env.NODE_ENV === 'development';
-    // In case of neeting to use a proxy for CORS when running locally
-    // Axios using URL directly
-    // const url = CORS_PROXY + GS_ENDPOINT;
-    const url = !isDevelopment ? CORS_PROXY + GS_ENDPOINT : GS_ENDPOINT;
     await axios({
       url: GS_ENDPOINT,
       timeout: 1000
@@ -36,26 +35,27 @@ export default function App() {
         const exerciseData = res.data;
         const exercises = exerciseData.exercises;
         setExercises(exercises);
-        setLoaded(true);
+        delayLoad();
       })
       .catch(function (err) {
-        setLoaded(true);
+        delayLoad();
         setSuccess(false);
       })
   };
 
   /* Components */
   const exerciseListComponent = <ExerciseList exercises={exercises} />;
-  const loadingComponent = <Loading />
+  const loadingComponent = <Loading success={success} />;
+
   return (
     <>
       <Container fixed maxWidth="md">
         <Grid
           container
           direction="row"
-          justify="space-between"
+          justify="center"
         >
-          {!isLoaded ? loadingComponent : exerciseListComponent}
+        { !isLoaded || !success ? loadingComponent : exerciseListComponent}
         </Grid>
       </Container>
     </>

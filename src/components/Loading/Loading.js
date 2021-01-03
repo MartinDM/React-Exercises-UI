@@ -15,18 +15,22 @@ const useStyles = makeStyles((theme) => ({
 export default function Loading( success ) {
 
   const classes = useStyles();
-  const errorMessage = 'Oops No exercises to show 😧'
-
-  return (
-    <>
+  if( !success ) {
+    return (
+      <div>
+        <p>Oops! There was an error behind the scenes 😧</p>
+        <p>Fear not! Get workout tips from the team at <a href="https://central.gymshark.com/category/conditioning">Gymshark Central</a></p>
+      </div>
+    )
+  } else {
+    return (
+      <>
       <Backdrop className={classes.backdrop} open={true}>
-        {  !success ?  
-              errorMessage
-            : <CircularProgress color="inherit" />
-        }
+        <CircularProgress color="inherit" />
       </Backdrop>
-    </>
-  );
+      </>
+    );
+  }
 };
 
 Loading.propTypes = {
