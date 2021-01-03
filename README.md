@@ -21,6 +21,13 @@ The project uses SASS files for each component, with a global stylesheet for gen
 - Fully-responsive
 - Components used can be developed in isolaton in the Storybook UI (See below)
 
+## Things I would improve
+- More tests for different states
+- Cache smaller versions of the images in a cloud service
+- UI: Fade out images on toggle
+- Lazy loading as the user scrolls
+- Filter features, such as by muscle group
+- Store toggle state/filter in local storage for return visits
 ## Available Scripts
 
 In the project directory, you can run:
