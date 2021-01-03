@@ -21,12 +21,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "build": "react-scripts build",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "publish": "npm run build && cp CNAME ./build && cd ./build && surge"
+    "publish": "cp CNAME ./build && cd ./build && surge"
   },
   "eslintConfig": {
     "extends": [

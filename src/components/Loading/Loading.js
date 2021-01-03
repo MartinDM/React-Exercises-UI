@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Loading( success ) {
+export default function Loading( {success} ) {
 
   const classes = useStyles();
   if( !success ) {

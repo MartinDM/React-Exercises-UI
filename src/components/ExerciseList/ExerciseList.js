@@ -10,7 +10,7 @@ export default function ExerciseList({ exercises }) {
       <div className="exercise-list--empty">
         <div className="message-area">
           <h1 className="h2 message-area__title">Oops</h1>
-          <p><strong>No exercises to show right now! 😧 </strong></p>
+          <p><strong>No exercises to show right now! 😧</strong></p>
           <p>Fear not! Get workout tips from the team at <a href="https://central.gymshark.com/category/conditioning">Gymshark Central</a></p>
         </div>
       </div>
