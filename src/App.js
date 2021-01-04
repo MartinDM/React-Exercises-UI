@@ -35,7 +35,7 @@ export default function App() {
   const fetchExercises = async () => {
     await axios({
       url,
-      timeout: 5000
+      timeout: 10000
     })
       .then(res => {
         const exerciseData = res.data;
