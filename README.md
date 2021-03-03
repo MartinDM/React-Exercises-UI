@@ -2,9 +2,9 @@
 
 __This is a demo app which uses an endpoint of exercises to create a user experience around them.__
 
-**[🚀 App demo on Surge.sh  ↗️ ](https://gymshark-fitness-app.surge.sh)**
+**[🚀 App demo on Surge.sh  ↗️ ](https://martin-fitness-app.surge.sh)**
 
-**[🚀 Storybook of components at /storybook-static ↗️  ](https://gymshark-fitness-app.surge.sh/storybook-static)**
+**[🚀 Storybook of components at /storybook-static ↗️  ](https://martin-fitness-app.surge.sh/storybook-static)**
 
 ![App Preview](https://github.com/MartinDM/exercises/blob/main/preview-1.png?raw=true "App preview")
 
@@ -46,7 +46,7 @@ To start development locally
 
 Run after `npm run build` to create a production-optimised bundle.
 This will publish to Surge.sh for demo purposes at the url named in the CNAME file. Hit enter on the command line to confirm source directory.
-The app is then available at `http://gymshark-fitness-app.surge.sh/`
+The app is then available at `http://martin-fitness-app.surge.sh/`
 
 ℹ If you copy the **storybook** output to `./build` this will also be uploaded for online preview at the respective url.
 
