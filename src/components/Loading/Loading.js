@@ -19,7 +19,6 @@ export default function Loading( {success} ) {
     return (
       <div>
         <p>Oops! There was an error behind the scenes 😧</p>
-        <p>Fear not! Get workout tips from the team at <a href="https://central.gymshark.com/category/conditioning">Gymshark Central</a></p>
       </div>
     )
   } else {

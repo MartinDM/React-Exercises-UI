@@ -17,9 +17,10 @@ export default function App() {
   // In case of needing to use a temporary proxy for CORS when debugging locally
   // Axios using URL directly	
   const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/';
-  const GS_ENDPOINT = 'https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/';
+  const ENDPOINT = 'https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/';
+  const localData = './apiData.json';
   const isDevelopment = process.env.NODE_ENV === 'development';
-  const url = !isDevelopment ? CORS_PROXY + GS_ENDPOINT : GS_ENDPOINT;
+  const url = ENDPOINT;
 
   // Short delay for demo and user feedback
   const delayLoad = () => {
